@@ -1,0 +1,45 @@
+:root {
+
+  margin: 0 ;
+  padding: 0;
+  text-align: center;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #e5fdfb;
+}
+.logo {
+  width: 170px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.menu{
+  background-color: #000000 !important;
+
+}
+.menuLinks{
+  color: white !important;
+}
+.iconoCart{
+  color: white ;
+  font-size: 1.3rem ;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: black;
+}
+.contador{
+  background-color: #5bc7ba;
+  border-radius:60px;
+  padding: 0 6px;
+  margin: 0 2px;
+  font-weight: 800;
+  font-size: 0.8rem;
+  color:white;
+  margin-left: 5px;
+  
+}
