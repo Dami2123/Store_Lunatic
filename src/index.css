@@ -11,18 +11,15 @@ body {
   background-color: #e5fdfb;
 }
 .logo {
-  width: 170px;
+  width: 180px;
   text-align: left;
   margin: 0;
   padding: 0;
 }
 .menu{
   background-color: #000000 !important;
+}
 
-}
-.menuLinks{
-  color: white !important;
-}
 .iconoCart{
   color: white ;
   font-size: 1.3rem ;
@@ -42,4 +39,52 @@ h1 {
   color:white;
   margin-left: 5px;
   
+}
+
+.contCardProduct{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  
+ 
+}
+
+.cardProduct{
+  margin: 20px 20px;
+  padding: 10px;
+  background-color: #5ecec135;
+  border: 1px solid #5ecec135;
+  border-radius: 3px;
+  font-weight: 200;
+}
+
+.buttonCard {
+
+  background-color: #3bbeae90 ;
+  border: 1px solid #3bbeae90 ;
+  
+}
+
+.productImage{
+  width: 25rem;
+}
+.itemContainer{
+  display: flex;
+  justify-content: center;
+
+}
+
+.textItemContainer{
+  width: 40%;
+  padding-top: 60px;
+  
+}
+.dropItem{
+  color:white !important;
+  text-decoration: none;
+}
+b{
+  font-size: 1.5rem;
+  color: #33a99ce9;
 }
