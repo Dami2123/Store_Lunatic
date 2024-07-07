@@ -88,3 +88,95 @@ b{
   font-size: 1.5rem;
   color: #33a99ce9;
 }
+
+//Estilos carrito
+
+
+.contenedor_productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+.subcontenedor__carrito{
+  display: flex;
+  flex-wrap: wrap;
+ 
+  margin: 10px 80px;
+  padding: 15px;
+  background-color: #5ecec135;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-weight: 200;
+}
+
+
+
+.img_carrito{
+  width: 100px;
+  border-radius: 15px;
+}
+
+.detalles{
+  margin-left: 20px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+.contenedor_carrito{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.boton_cambio{
+  padding: 2px;
+  background-color: #5bc7babf;
+  border: none;
+  border-radius:5px;
+  font-size: 0.9rem;
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.boton_agregar{
+  padding: 2px 6px;
+  background-color: #5bc7babf;
+  border: none;
+  border-radius:15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 30px 0px;
+ 
+}
+
+
+
+.eliminar{
+margin-left: 40px;
+margin-bottom: 5px;
+padding:0 5px;
+background-color: #3dc0b1e3 ;
+border: 1px solid #3bbeae90 ;
+border-radius: 15px;
+
+}
+
+.cambio_cant{
+  display: inline-flex;
+  margin: 20px;
+
+}
+.total{
+  font-weight: 600;
+  font-size: 1.5rem;
+}

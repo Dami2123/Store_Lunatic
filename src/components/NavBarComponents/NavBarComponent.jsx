@@ -5,11 +5,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
-import useProductsCategoryList from '../../hooks/useProductsCategoryList';
+import useCollectionItems from '../../hooks/useCollectionItems';
 
 
 const NavBarComponent = () => {
-  const {categories}=useProductsCategoryList()
+  const {items}=useCollectionItems("Categories")
   return (
     <Navbar expand="lg"  data-bs-theme="dark" className="menu bg-body-tertiary ">
     <Container>
@@ -18,7 +18,7 @@ const NavBarComponent = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
          <NavDropdown title="CATÁLOGO" id="basic-nav-dropdown">
-              {categories.map((category)=>{
+              {items.map((category)=>{
               return(
                 <NavDropdown.Item key={category.slug} >
                 <Link to={`/category/${category.slug}`} className='dropItem'>{category.name} </Link>
@@ -27,12 +27,10 @@ const NavBarComponent = () => {
               )}
               
           </NavDropdown>
-          <Nav.Link href="#link" >ACERCA DE NOSOTROS</Nav.Link>
-          <Nav.Link href="#link" >CONTACTO</Nav.Link>
-          <Nav.Link href="#link" >UBICACIÓN</Nav.Link>
+      
         </Nav>
       </Navbar.Collapse>
-      <CartWidgetComponent/>
+      <Link to={`/checkout`} className='dropItem'>  <CartWidgetComponent/> </Link>
     </Container>
   </Navbar>
   )

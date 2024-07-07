@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 
 const ItemListContainerComponent = ({products}) => {
 
-  
-  
   return <div className='contCardProduct'>
    {products.map((product)=>{
     return(
